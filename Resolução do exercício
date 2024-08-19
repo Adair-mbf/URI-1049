@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <map>
+
+using namespace std;
+
+int main() {
+  std::map<std::string, std::string> animais={
+  {"vertebrado ave carnivoro", "aguia"},
+  {"vertebrado ave onivoro", "pomba"},
+  {"vertebrado mamifero onivoro", "homem"},
+  {"vertebrado mamifero herbivoro", "vaca"},
+  {"invertebrado inseto hematofago", "pulga"},
+  {"invertebrado inseto herbivoro", "lagarta"},
+  {"invertebrado anelideo hematofago", "sanguessuga"},
+  {"invertebrado anelideo onivoro", "minhoca"}
+  };
+  string desc1, desc2, desc3;
+  cin>>desc1>>desc2>>desc3;
+  string key=desc1+" "+desc2+" "+desc3;
+  cout<<animais[key]<<endl;
+  return 0;
+}
